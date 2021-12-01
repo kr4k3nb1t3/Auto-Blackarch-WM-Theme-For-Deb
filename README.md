@@ -19,5 +19,3 @@ git clone https://github.com/kr4k3nb1t3/Auto-Blackarch-WM-Theme-For-Deb.git
 cd Auto-Blackarch-WM-Theme-For-Deb
 
 ./autoconf.sh
-
-Video 
