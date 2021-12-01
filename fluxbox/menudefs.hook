@@ -1,0 +1,92 @@
+# Automatically generated file. Do not edit (see /usr/share/doc/menu/html/index.html)
+
+   [submenu] (Applications) {}
+      [submenu] (Accessibility) {}
+         [exec] (Xmag) {xmag} <>
+      [end]
+      [submenu] (Data Management) {}
+         [exec] (Innotop) { x-terminal-emulator -T "Innotop" -e /usr/bin/innotop} <>
+      [end]
+      [submenu] (Editors) {}
+         [exec] (Xedit) {xedit} <>
+      [end]
+      [submenu] (Graphics) {}
+         [exec] (dotty) {/usr/bin/dotty} <>
+         [exec] (lefty) {/usr/bin/lefty} <>
+         [exec] (X Window Snapshot) {xwd | xwud} <>
+      [end]
+      [submenu] (Network) {}
+         [submenu] (Communication) {}
+            [exec] (Telnet) { x-terminal-emulator -T "Telnet" -e /usr/bin/telnet.netkit} <>
+            [exec] (Xbiff) {xbiff} <>
+            [exec] (xtightvncviewer) {/usr/bin/xtightvncviewer} <>
+         [end]
+         [submenu] (File Transfer) {}
+            [exec] (cadaver) { x-terminal-emulator -T "cadaver" -e /usr/bin/cadaver} <>
+         [end]
+         [submenu] (Monitoring) {}
+            [exec] (btscanner) { x-terminal-emulator -T "btscanner" -e /usr/bin/btscanner} <>
+            [exec] (nmapsi4) {/usr/bin/nmapsi4} <>
+         [end]
+         [submenu] (Web Browsing) {}
+            [exec] (Links 2) {/usr/bin/links2 -g} </usr/share/pixmaps/links2.xpm>
+            [exec] (Links 2 (text\)) { x-terminal-emulator -T "Links 2 (text)" -e /usr/bin/links2} </usr/share/pixmaps/links2.xpm>
+         [end]
+      [end]
+      [submenu] (Programming) {}
+         [exec] (Monodoc (http\)) { x-terminal-emulator -T "Monodoc (http)" -e /usr/bin/monodoc-http} </usr/share/pixmaps/monodoc.xpm>
+         [exec] (Tclsh8.6) { x-terminal-emulator -T "Tclsh8.6" -e /usr/bin/tclsh8.6} <>
+         [exec] (TkWish8.6) {x-terminal-emulator -e /usr/bin/wish8.6} <>
+      [end]
+      [submenu] (Science) {}
+         [submenu] (Mathematics) {}
+            [exec] (Xcalc) {xcalc} <>
+         [end]
+      [end]
+      [submenu] (Shells) {}
+         [exec] (Bash) { x-terminal-emulator -T "Bash" -e /bin/bash --login} <>
+         [exec] (Dash) { x-terminal-emulator -T "Dash" -e /bin/dash -i} <>
+         [exec] (Sh) { x-terminal-emulator -T "Sh" -e /bin/sh --login} <>
+         [exec] (Zsh) { x-terminal-emulator -T "Zsh" -e /bin/zsh} <>
+      [end]
+      [submenu] (System) {}
+         [submenu] (Administration) {}
+            [exec] (Debian Task selector) { x-terminal-emulator -T "Debian Task selector" -e su-to-root -c tasksel} <>
+            [exec] (Editres) {editres} <>
+            [exec] (Xclipboard) {xclipboard} <>
+            [exec] (Xfontsel) {xfontsel} <>
+            [exec] (Xkill) {xkill} <>
+            [exec] (Xrefresh) {xrefresh} <>
+         [end]
+         [submenu] (Hardware) {}
+            [exec] (gscanbus) {/usr/bin/gscanbus} <>
+            [exec] (Xvidtune) {xvidtune} <>
+         [end]
+         [submenu] (Monitoring) {}
+            [exec] (Pstree) { x-terminal-emulator -T "Pstree" -e /usr/bin/pstree.x11} </usr/share/pixmaps/pstree16.xpm>
+            [exec] (Top) { x-terminal-emulator -T "Top" -e /usr/bin/top} <>
+            [exec] (Xconsole) {xconsole -file /dev/xconsole} <>
+            [exec] (Xev) {x-terminal-emulator -e xev} <>
+            [exec] (Xload) {xload} <>
+         [end]
+      [end]
+      [submenu] (Viewers) {}
+         [exec] (GraphicsMagick) {/usr/bin/gm display logo:} <>
+         [exec] (Xditview) {xditview} <>
+      [end]
+   [end]
+   [submenu] (Games) {}
+      [submenu] (Toys) {}
+         [exec] (Oclock) {oclock} <>
+         [exec] (Xclock (analog\)) {xclock -analog} <>
+         [exec] (Xclock (digital\)) {xclock -digital -update 1} <>
+         [exec] (Xeyes) {xeyes} <>
+         [exec] (Xlogo) {xlogo} <>
+      [end]
+   [end]
+   [submenu] (Help) {}
+      [exec] (Xman) {xman} <>
+   [end]
+   [submenu] (Window Managers) {}
+      [restart] (FluxBox)  {/usr/bin/startfluxbox}
+   [end]
