@@ -1,4 +1,4 @@
-[begin] (blackarch menu)
+[begin] (Kali Menu)
 
     [submenu] (terminals)
         [exec] (term (grey\)) {urxvt -bg black -fg grey}
@@ -16,9 +16,10 @@
     [submenu] (network)
         [exec] (wifi-radar) {wifi-radar}
         [exec] (wifi-radar-polkit) {wifi-radar-polkit}
+        [exec] (nm-applet) {nm-applet}
     [end]
 
-    [submenu] (blackarch)
+    [submenu] (Kali Menu)
       [submenu] (anti-forensic)
           [exec] (ropeadope) {urxvt -e sh -c 'ropeadope ; bash'}
           [exec] (saruman) {urxvt -e sh -c 'saruman ; bash'}
@@ -3991,7 +3992,7 @@
           [exec] (mibblevalidator) {urxvt -e sh -c 'mibblevalidator ; bash'}
           [exec] (minimodem) {urxvt -e sh -c 'minimodem ; bash'}
           [exec] (mkyara) {urxvt -e sh -c 'mkyara -h ; bash'}
-          [exec] (msfdb-blackarch) {urxvt -e sh -c 'msfdb-blackarch ; bash'}
+          [exec] (msfdb) {urxvt -e sh -c 'msfdb ; bash'}
           [exec] (mutator) {urxvt -e sh -c 'mutator -h ; bash'}
           [exec] (mysql2sqlite) {urxvt -e sh -c 'mysql2sqlite -h ; bash'}
           [exec] (netactview) {urxvt -e sh -c 'netactview ; bash'}
