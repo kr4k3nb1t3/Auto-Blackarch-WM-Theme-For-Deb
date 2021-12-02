@@ -14,8 +14,14 @@ deb https://deb.parrot.sh/parrot/ rolling-security main contrib non-free
 
 git clone https://github.com/kr4k3nb1t3/Auto-Blackarch-WM-Theme-For-Deb.git
 
-# Salga del modo super usuario para ejecutar autoconf.sh. 
+# Salga del modo super usuario para ejecutar autoconf.sh y otorgue permisos de ejecucion. 
 
 cd Auto-Blackarch-WM-Theme-For-Deb
 
+chmod +x autoconf.sh
+
 ./autoconf.sh
+
+# Video de Configuracion...
+
+https://youtu.be/rlMYZ19rRAk
