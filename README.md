@@ -22,6 +22,8 @@ chmod +x autoconf.sh
 
 ./autoconf.sh
 
+# Hay un archivo llamado Menu fuera de la carpeta de Fluxbox, este es una configuracion para el menu de harramientas de Kali + Parrot OS. Si desea instalar esta conf, sustituya el archivo menu dentro de la carpeta Fluxbox por este.
+
 # Video de Configuracion...
 
 https://youtu.be/rlMYZ19rRAk
