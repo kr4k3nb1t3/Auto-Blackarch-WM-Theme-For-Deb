@@ -1,0 +1,523 @@
+[begin] (Kali)
+
+    [submenu] (terminals)
+        [exec] (term (grey\)) {urxvt -bg black -fg grey}
+        [exec] (term (red\)) {urxvt -bg black -fg red}
+        [exec] (term (green\)) {urxvt -bg black -fg green}
+        [exec] (term (yellow\)) {urxvt -bg black -fg yellow}
+        [exec] (term (white\)) {urxvt -bg black -fg white}
+    [end]
+
+    [submenu] (browsers)
+        [exec] (firefox) {firefox}
+        [exec] (chromium) {chromium --no-sandbox}
+        [exec] (google-chrome) {google-chrome}
+    [end]
+
+    [submenu] (network)
+        [exec] (wifi-radar) {wifi-radar}
+        [exec] (wifi-radar-polkit) {wifi-radar-polkit}
+        [exec] (nm-applet) {nm-applet}
+        [exec] (AnonSurf GUI) {anonsurf-gtk}
+        [exec] (Anonsurf Start) {anonsurf start}
+        [exec] (Anonsurf Stop) {anonsurf stop}
+    [end]
+    [submenu] (Development)
+        [exec] (DBeaver Community) {dbeaver}
+        [exec] (ferret) {ferret}
+        [exec] (GDB) {rxvt -e gdb}
+        [exec] (Geany) {geany}
+        [exec] (Git Cola) {git-cola --prompt}
+        [exec] (Git DAG) {git-dag --prompt}
+        [exec] (Meld) {meld}
+        [exec] (Monodoc [http]) {rxvt -e monodoc-http}
+        [exec] (Qt 5 Assistant) {/usr/lib/qt5/bin/assistant}
+        [exec] (Qt 5 Designer) {/usr/lib/qt5/bin/designer}
+        [exec] (Qt 5 Linguist) {/usr/lib/qt5/bin/linguist}
+        [exec] (Qt Creator) {qtcreator}
+        [exec] (SQLite database browser) {sqlitebrowser}
+        [exec] (Tclsh8.6) {rxvt -e tclsh8.6}
+        [exec] (TkWish8.6) {x-terminal-emulator -e /usr/bin/wish8.6}
+        [exec] (VSCodium) {/usr/share/codium/codium}
+        [exec] (Zeal) {zeal}
+    [end]
+    [submenu] (Editors)
+        [exec] (Midnight Commander editor) {rxvt -e mcedit}
+        [exec] (Nano) {rxvt -e nano}
+        [exec] (Pico) {rxvt -e pico}
+        [exec] (Text Editor) {mousepad}
+        [exec] (Vi) {rxvt -e vi}
+        [exec] (Vim) {rxvt -e vim}
+        [exec] (Xedit) {xedit}
+    [end]
+        [submenu] (Amusement)
+            [exec] (Oclock) {oclock}
+            [exec] (Xclock [analog]) {xclock -analog}
+            [exec] (Xclock [digital]) {xclock -digital -update 1}
+            [exec] (Xeyes) {xeyes}
+            [exec] (Xlogo) {xlogo}
+        [end]
+    [submenu] (Graphics)
+        [exec] (dotty) {dotty}
+        [exec] (GraphicsMagick) {gm display logo:}
+        [exec] (lefty) {lefty}
+        [exec] (MATE Color Selection) {mate-color-select}
+        [exec] (Ristretto Image Viewer) {ristretto}
+        [exec] (Xditview) {xditview}
+    [end]
+    [submenu] (Multimedia)
+        [exec] (ALSA mixer) {rxvt -e alsamixer}
+        [exec] (CDp) {rxvt -e cdp}
+        [exec] (Parole Media Player) {parole}
+        [exec] (PulseAudio Volume Control) {pavucontrol}
+        [exec] (SimpleScreenRecorder) {simplescreenrecorder --logfile}
+        [exec] (vokoscreenNG) {vokoscreenNG}
+    [end]
+    [submenu] (Network)
+        [exec] (Cadaver) {rxvt -e cadaver}
+        [exec] (Chromium Web Browser) {chromium}
+        [exec] (EtherApe) {etherape}
+        [exec] (FireFox) {firefox}
+        [exec] (Firefox ESR) {firefox-esr}
+        [exec] (FTP) {rxvt -e ftp}
+        [exec] (King Phisher) {rxvt -e /usr/share/king-phisher/KingPhisher}
+        [exec] (Links) {rxvt -e links}
+        [exec] (Links 2) {xlinks2}
+        [exec] (Mail) {rxvt -e mail}
+        [exec] (Mail Reader) {exo-open --launch MailReader}
+        [exec] (Onion Circuits) {onioncircuits}
+        [exec] (OnionShare) {onionshare-gui}
+        [exec] (Ricochet IM) {ricochet}
+        [exec] (SSL/SSH VNC Viewer) {ssvnc -noenc}
+        [exec] (Telnet) {rxvt -e telnet}
+        [exec] (Tor Browser) {torbrowser-launcher}
+        [exec] (Tor Browser Launcher Settings) {torbrowser-launcher --settings}
+        [exec] (Web Browser) {/usr/share/kali-themes/default-browser}
+        [exec] (Web Browser) {exo-open --launch WebBrowser}
+        [exec] (xtightvncviewer) {xtightvncviewer}
+    [end]
+    [submenu] (Office)
+        [exec] (Atril Document Viewer) {atril}
+        [exec] (Xbiff) {xbiff}
+    [end]
+    [submenu] (Kali Tools)
+        [exec] (0trace) {rxvt -e /usr/share/kali-menu/exec-in-shell "0trace.sh"}
+        [exec] (affcat) {rxvt -e /usr/share/kali-menu/exec-in-shell "affcat -h"}
+        [exec] (afl) {rxvt -e /usr/share/kali-menu/exec-in-shell "afl-fuzz -h"}
+        [exec] (aircrack-ng) {rxvt -e /usr/share/kali-menu/exec-in-shell "aircrack-ng --help"}
+        [exec] (airgeddon [root]) {rxvt -e sudo airgeddon}
+        [exec] (apache-users) {rxvt -e /usr/share/kali-menu/exec-in-shell "apache-users"}
+        [exec] (arping) {rxvt -e /usr/share/kali-menu/exec-in-shell "arping --help"}
+        [exec] (asleap) {rxvt -e /usr/share/kali-menu/exec-in-shell "asleap -h"}
+        [exec] (autopsy [root]) {rxvt -e sudo autopsy}
+        [exec] (backdoor-factory) {rxvt -e /usr/share/kali-menu/exec-in-shell "backdoor-factory -h"}
+        [exec] (bed) {rxvt -e /usr/share/kali-menu/exec-in-shell "bed"}
+        [exec] (beef start) {rxvt -e /usr/share/kali-menu/exec-in-shell "sudo beef-xss"}
+        [exec] (beef stop) {rxvt -e /usr/share/kali-menu/exec-in-shell "sudo beef-xss-stop"}
+        [exec] (bettercap) {rxvt -e /usr/share/kali-menu/exec-in-shell "bettercap --help"}
+        [exec] (binwalk) {rxvt -e /usr/share/kali-menu/exec-in-shell "binwalk -h"}
+        [exec] (blkcalc) {rxvt -e /usr/share/kali-menu/exec-in-shell "blkcalc"}
+        [exec] (blkcat) {rxvt -e /usr/share/kali-menu/exec-in-shell "blkcat"}
+        [exec] (blkls) {rxvt -e /usr/share/kali-menu/exec-in-shell "blkls"}
+        [exec] (blkstat) {rxvt -e /usr/share/kali-menu/exec-in-shell "blkstat"}
+        [exec] (bluelog) {rxvt -e /usr/share/kali-menu/exec-in-shell "bluelog -h"}
+        [exec] (blueranger) {rxvt -e /usr/share/kali-menu/exec-in-shell "blueranger"}
+        [exec] (bluesnarfer) {rxvt -e /usr/share/kali-menu/exec-in-shell "bluesnarfer"}
+        [exec] (braa) {rxvt -e /usr/share/kali-menu/exec-in-shell "braa -h"}
+        [exec] (btscanner) {rxvt -e /usr/share/kali-menu/exec-in-shell "btscanner -h"}
+        [exec] (bulk_extractor) {rxvt -e /usr/share/kali-menu/exec-in-shell "bulk_extractor -h"}
+        [exec] (bully) {rxvt -e /usr/share/kali-menu/exec-in-shell "bully"}
+        [exec] (burpsuite) {burpsuite}
+        [exec] (cewl) {rxvt -e /usr/share/kali-menu/exec-in-shell "cewl --help"}
+        [exec] (Change exit node) {anonsurf changeid}
+        [exec] (Check IP address) {anonsurf myip}
+        [exec] (chkrootkit) {rxvt -e /usr/share/kali-menu/exec-in-shell "chkrootkit -h"}
+        [exec] (chntpw) {rxvt -e /usr/share/kali-menu/exec-in-shell "chntpw -h"}
+        [exec] (cisco-auditing-tool) {rxvt -e /usr/share/kali-menu/exec-in-shell "CAT"}
+        [exec] (cisco-global-exploiter) {rxvt -e /usr/share/kali-menu/exec-in-shell "cge.pl"}
+        [exec] (cisco-ocs) {rxvt -e /usr/share/kali-menu/exec-in-shell "cisco-ocs"}
+        [exec] (cisco-torch) {rxvt -e /usr/share/kali-menu/exec-in-shell "cisco-torch"}
+        [exec] (clang) {rxvt -e /usr/share/kali-menu/exec-in-shell "clang --help"}
+        [exec] (clang++) {rxvt -e /usr/share/kali-menu/exec-in-shell "clang++ --help"}
+        [exec] (cmospwd) {rxvt -e /usr/share/kali-menu/exec-in-shell "cmospwd -h"}
+        [exec] (commix) {rxvt -e /usr/share/kali-menu/exec-in-shell "commix"}
+        [exec] (copy-router-config) {rxvt -e /usr/share/kali-menu/exec-in-shell "copy-router-config.pl"}
+        [exec] (cowpatty) {rxvt -e /usr/share/kali-menu/exec-in-shell "cowpatty"}
+        [exec] (crackle) {rxvt -e /usr/share/kali-menu/exec-in-shell "crackle"}
+        [exec] (crackmapexec) {rxvt -e /usr/share/kali-menu/exec-in-shell "crackmapexec -h"}
+        [exec] (crunch) {rxvt -e /usr/share/kali-menu/exec-in-shell "crunch"}
+        [exec] (cutycapt) {rxvt -e /usr/share/kali-menu/exec-in-shell "cutycapt --help"}
+        [exec] (darkstat) {rxvt -e /usr/share/kali-menu/exec-in-shell "darkstat"}
+        [exec] (davtest) {rxvt -e /usr/share/kali-menu/exec-in-shell "davtest"}
+        [exec] (dbd) {rxvt -e /usr/share/kali-menu/exec-in-shell "dbd -h"}
+        [exec] (dc3dd) {rxvt -e /usr/share/kali-menu/exec-in-shell "dc3dd --help"}
+        [exec] (dcfldd) {rxvt -e /usr/share/kali-menu/exec-in-shell "dcfldd --help"}
+        [exec] (ddrescue) {rxvt -e /usr/share/kali-menu/exec-in-shell "dd_rescue -h"}
+        [exec] (dex2jar) {rxvt -e /usr/share/kali-menu/exec-in-shell "d2j-dex2jar -h"}
+        [exec] (dhcpig) {rxvt -e /usr/share/kali-menu/exec-in-shell "dhcpig -h"}
+        [exec] (dirb) {rxvt -e /usr/share/kali-menu/exec-in-shell "dirb"}
+        [exec] (dirbuster) {dirbuster}
+        [exec] (dmitry) {rxvt -e /usr/share/kali-menu/exec-in-shell "dmitry"}
+        [exec] (dns2tcpc) {rxvt -e /usr/share/kali-menu/exec-in-shell "dns2tcpc"}
+        [exec] (dns2tcpd) {rxvt -e /usr/share/kali-menu/exec-in-shell "dns2tcpd"}
+        [exec] (dnschef) {rxvt -e /usr/share/kali-menu/exec-in-shell "dnschef -h"}
+        [exec] (dnsenum) {rxvt -e /usr/share/kali-menu/exec-in-shell "dnsenum -h"}
+        [exec] (dnsmap) {rxvt -e /usr/share/kali-menu/exec-in-shell "dnsmap"}
+        [exec] (dnsrecon) {rxvt -e /usr/share/kali-menu/exec-in-shell "dnsrecon -h"}
+        [exec] (dnstracer) {rxvt -e /usr/share/kali-menu/exec-in-shell "dnstracer"}
+        [exec] (dnswalk) {rxvt -e /usr/share/kali-menu/exec-in-shell "dnswalk --help"}
+        [exec] (driftnet) {rxvt -e /usr/share/kali-menu/exec-in-shell "driftnet -h"}
+        [exec] (dsniff) {rxvt -e /usr/share/kali-menu/exec-in-shell "dsniff -h"}
+        [exec] (eapmd5pass) {rxvt -e /usr/share/kali-menu/exec-in-shell "eapmd5pass -h"}
+        [exec] (edb-debugger) {edb}
+        [exec] (enum4linux) {rxvt -e /usr/share/kali-menu/exec-in-shell "enum4linux"}
+        [exec] (enumiax) {rxvt -e /usr/share/kali-menu/exec-in-shell "enumiax -h"}
+        [exec] (ettercap-graphical) {ettercap-pkexec -G}
+        [exec] (evilgrade) {rxvt -e evilgrade}
+        [exec] (ewfacquire) {rxvt -e /usr/share/kali-menu/exec-in-shell "ewfacquire -h"}
+        [exec] (exe2hex) {rxvt -e /usr/share/kali-menu/exec-in-shell "exe2hex"}
+        [exec] (extundelete) {rxvt -e /usr/share/kali-menu/exec-in-shell "extundelete --help"}
+        [exec] (eyewitness) {rxvt -e /usr/share/kali-menu/exec-in-shell "eyewitness -h"}
+        [exec] (faraday start) {rxvt -e /usr/share/kali-menu/exec-in-shell "sudo faraday"}
+        [exec] (fcrackzip) {rxvt -e /usr/share/kali-menu/exec-in-shell "fcrackzip --help"}
+        [exec] (fern wifi cracker [root]) {pkexec fern-wifi-cracker}
+        [exec] (ffind) {rxvt -e /usr/share/kali-menu/exec-in-shell "ffind"}
+        [exec] (ffuf) {rxvt -e /usr/share/kali-menu/exec-in-shell "ffuf -h"}
+        [exec] (fierce) {rxvt -e /usr/share/kali-menu/exec-in-shell "fierce -h"}
+        [exec] (fiked) {rxvt -e /usr/share/kali-menu/exec-in-shell "fiked -h"}
+        [exec] (fls) {rxvt -e /usr/share/kali-menu/exec-in-shell "fls"}
+        [exec] (foremost) {rxvt -e /usr/share/kali-menu/exec-in-shell "foremost -h"}
+        [exec] (fping) {rxvt -e /usr/share/kali-menu/exec-in-shell "fping -h"}
+        [exec] (fragrouter) {rxvt -e /usr/share/kali-menu/exec-in-shell "fragrouter -h"}
+        [exec] (fsstat) {rxvt -e /usr/share/kali-menu/exec-in-shell "fsstat"}
+        [exec] (ftest) {rxvt -e /usr/share/kali-menu/exec-in-shell "ftest"}
+        [exec] (galleta) {rxvt -e /usr/share/kali-menu/exec-in-shell "galleta"}
+        [exec] (guymager [root]) {pkexec guymager}
+        [exec] (gvm check setup) {rxvt -e /usr/share/kali-menu/exec-in-shell "gvm-check-setup"}
+        [exec] (gvm feed update) {rxvt -e /usr/share/kali-menu/exec-in-shell "gvm-feed-update"}
+        [exec] (gvm initial setup) {rxvt -e /usr/share/kali-menu/exec-in-shell "gvm-setup"}
+        [exec] (gvm start) {rxvt -e /usr/share/kali-menu/exec-in-shell "sudo gvm-start"}
+        [exec] (gvm stop) {rxvt -e /usr/share/kali-menu/exec-in-shell "sudo gvm-stop"}
+        [exec] (hackrf_info) {rxvt -e /usr/share/kali-menu/exec-in-shell "hackrf_info -h"}
+        [exec] (hamster) {rxvt -e /usr/share/kali-menu/exec-in-shell "hamster"}
+        [exec] (hash-identifier) {rxvt -e hash-identifier}
+        [exec] (hashcat) {rxvt -e /usr/share/kali-menu/exec-in-shell "hashcat --help"}
+        [exec] (hashdeep) {rxvt -e /usr/share/kali-menu/exec-in-shell "hashdeep -h"}
+        [exec] (hashid) {rxvt -e /usr/share/kali-menu/exec-in-shell "hashid -h"}
+        [exec] (Help) {yelp help:mate-user-guide}
+        [exec] (hexinject) {rxvt -e /usr/share/kali-menu/exec-in-shell "hexinject -h"}
+        [exec] (hfind) {rxvt -e /usr/share/kali-menu/exec-in-shell "hfind"}
+        [exec] (hping3) {rxvt -e /usr/share/kali-menu/exec-in-shell "hping3 -h"}
+        [exec] (hydra) {rxvt -e /usr/share/kali-menu/exec-in-shell "hydra -h"}
+        [exec] (hydra-gtk) {xhydra}
+        [exec] (iaxflood) {rxvt -e /usr/share/kali-menu/exec-in-shell "iaxflood"}
+        [exec] (icat-sleuthkit) {rxvt -e /usr/share/kali-menu/exec-in-shell "icat"}
+        [exec] (ifind) {rxvt -e /usr/share/kali-menu/exec-in-shell "ifind"}
+        [exec] (ike-scan) {rxvt -e /usr/share/kali-menu/exec-in-shell "ike-scan -h"}
+        [exec] (ils-sleuthkit) {rxvt -e /usr/share/kali-menu/exec-in-shell "ils"}
+        [exec] (img_cat) {rxvt -e /usr/share/kali-menu/exec-in-shell "img_cat"}
+        [exec] (img_stat) {rxvt -e /usr/share/kali-menu/exec-in-shell "img_stat"}
+        [exec] (intrace) {rxvt -e /usr/share/kali-menu/exec-in-shell "intrace"}
+        [exec] (inviteflood) {rxvt -e /usr/share/kali-menu/exec-in-shell "inviteflood -h"}
+        [exec] (iodine) {rxvt -e /usr/share/kali-menu/exec-in-shell "iodine-client-start -h"}
+        [exec] (irpas-ass) {rxvt -e /usr/share/kali-menu/exec-in-shell "ass"}
+        [exec] (irpass-cdp) {rxvt -e /usr/share/kali-menu/exec-in-shell "cdp"}
+        [exec] (istat) {rxvt -e /usr/share/kali-menu/exec-in-shell "istat"}
+        [exec] (javasnoop) {javasnoop}
+        [exec] (jboss-autopwn-linux) {rxvt -e /usr/share/kali-menu/exec-in-shell "jboss-linux"}
+        [exec] (jboss-autopwn-win) {rxvt -e /usr/share/kali-menu/exec-in-shell "jboss-win"}
+        [exec] (jcat) {rxvt -e /usr/share/kali-menu/exec-in-shell "jcat"}
+        [exec] (jls) {rxvt -e /usr/share/kali-menu/exec-in-shell "jls"}
+        [exec] (john) {rxvt -e /usr/share/kali-menu/exec-in-shell "john"}
+        [exec] (johnny) {johnny}
+        [exec] (joomscan) {rxvt -e /usr/share/kali-menu/exec-in-shell "joomscan"}
+        [exec] (jSQL Injection) {jsql}
+        [exec] (kismet) {rxvt -e /usr/share/kali-menu/exec-in-shell "kismet -h"}
+        [exec] (laudanum) {rxvt -e laudanum}
+        [exec] (lbd) {rxvt -e /usr/share/kali-menu/exec-in-shell "lbd"}
+        [exec] (legion [root]) {pkexec legion}
+        [exec] (lynis) {rxvt -e /usr/share/kali-menu/exec-in-shell "lynis -h"}
+        [exec] (macchanger) {rxvt -e /usr/share/kali-menu/exec-in-shell "macchanger -h"}
+        [exec] (mactime-sleuthkit) {rxvt -e /usr/share/kali-menu/exec-in-shell "mactime"}
+        [exec] (magicrescue) {rxvt -e /usr/share/kali-menu/exec-in-shell "magicrescue"}
+        [exec] (maltego) {maltego}
+        [exec] (maskgen) {rxvt -e /usr/share/kali-menu/exec-in-shell "maskgen -h"}
+        [exec] (masscan) {rxvt -e /usr/share/kali-menu/exec-in-shell "masscan --help"}
+        [exec] (mdb-sql) {rxvt -e /usr/share/kali-menu/exec-in-shell "mdb-sql -h"}
+        [exec] (mdk3) {rxvt -e /usr/share/kali-menu/exec-in-shell "sudo mdk3 --help"}
+        [exec] (medusa) {rxvt -e /usr/share/kali-menu/exec-in-shell "medusa -h"}
+        [exec] (merge-router-config) {rxvt -e /usr/share/kali-menu/exec-in-shell "merge-router-config.pl"}
+        [exec] (mfcuk) {rxvt -e /usr/share/kali-menu/exec-in-shell "mfcuk -h"}
+        [exec] (mfoc) {rxvt -e /usr/share/kali-menu/exec-in-shell "mfoc -h"}
+        [exec] (mfterm) {rxvt -e /usr/share/kali-menu/exec-in-shell "mfterm -h"}
+        [exec] (mifare-classic-format) {rxvt -e /usr/share/kali-menu/exec-in-shell "mifare-classic-format -h"}
+        [exec] (minicom) {rxvt -e /usr/share/kali-menu/exec-in-shell "minicom -h"}
+        [exec] (miredo) {rxvt -e /usr/share/kali-menu/exec-in-shell "miredo -h"}
+        [exec] (missidentify) {rxvt -e /usr/share/kali-menu/exec-in-shell "missidentify -h"}
+        [exec] (mitmproxy) {rxvt -e /usr/share/kali-menu/exec-in-shell "mitmproxy -h"}
+        [exec] (mmcat) {rxvt -e /usr/share/kali-menu/exec-in-shell "mmcat"}
+        [exec] (mmls) {rxvt -e /usr/share/kali-menu/exec-in-shell "mmls"}
+        [exec] (mmstat) {rxvt -e /usr/share/kali-menu/exec-in-shell "mmstat"}
+        [exec] (msf payload creator) {rxvt -e /usr/share/kali-menu/exec-in-shell "msfpc"}
+        [exec] (NASM shell) {rxvt -e msf-nasm_shell}
+        [exec] (nbtscan) {rxvt -e /usr/share/kali-menu/exec-in-shell "nbtscan -h"}
+        [exec] (ncrack) {rxvt -e /usr/share/kali-menu/exec-in-shell "ncrack -h"}
+        [exec] (netdiscover) {rxvt -e /usr/share/kali-menu/exec-in-shell "netdiscover -h"}
+        [exec] (netmask) {rxvt -e /usr/share/kali-menu/exec-in-shell "netmask -h"}
+        [exec] (netsniff-ng) {rxvt -e /usr/share/kali-menu/exec-in-shell "netsniff-ng -h"}
+        [exec] (nfc-list) {rxvt -e /usr/share/kali-menu/exec-in-shell "nfc-list -h"}
+        [exec] (nfc-mfclassic) {rxvt -e /usr/share/kali-menu/exec-in-shell "nfc-mfclassic -h"}
+        [exec] (nikto) {rxvt -e /usr/share/kali-menu/exec-in-shell "nikto -h"}
+        [exec] (nishang) {rxvt -e nishang}
+        [exec] (nmap) {rxvt -e /usr/share/kali-menu/exec-in-shell "nmap"}
+        [exec] (ohrwurm) {rxvt -e /usr/share/kali-menu/exec-in-shell "sudo ohrwurm"}
+        [exec] (onesixtyone) {rxvt -e /usr/share/kali-menu/exec-in-shell "onesixtyone"}
+        [exec] (ophcrack) {ophcrack}
+        [exec] (ophcrack-cli) {rxvt -e /usr/share/kali-menu/exec-in-shell "ophcrack-cli"}
+        [exec] (oscanner) {rxvt -e /usr/share/kali-menu/exec-in-shell "oscanner"}
+        [exec] (p0f) {rxvt -e /usr/share/kali-menu/exec-in-shell "p0f -h"}
+        [exec] (pasco) {rxvt -e /usr/share/kali-menu/exec-in-shell "pasco"}
+        [exec] (patator) {rxvt -e /usr/share/kali-menu/exec-in-shell "patator -h"}
+        [exec] (pdf-parser) {rxvt -e /usr/share/kali-menu/exec-in-shell "pdf-parser -h"}
+        [exec] (pdfid) {rxvt -e /usr/share/kali-menu/exec-in-shell "pdfid -h"}
+        [exec] (pipal) {rxvt -e /usr/share/kali-menu/exec-in-shell "pipal -h"}
+        [exec] (pixiewps) {rxvt -e /usr/share/kali-menu/exec-in-shell "pixiewps -h"}
+        [exec] (plecost) {rxvt -e /usr/share/kali-menu/exec-in-shell "plecost -h"}
+        [exec] (policygen) {rxvt -e /usr/share/kali-menu/exec-in-shell "policygen -h"}
+        [exec] (powershell empire) {rxvt -e /usr/share/kali-menu/exec-in-shell "powershell-empire -h"}
+        [exec] (powersploit) {rxvt -e powersploit}
+        [exec] (protos-sip) {rxvt -e /usr/share/kali-menu/exec-in-shell "protos-sip -help"}
+        [exec] (proxychains4) {rxvt -e /usr/share/kali-menu/exec-in-shell "proxychains4"}
+        [exec] (proxytunnel) {rxvt -e /usr/share/kali-menu/exec-in-shell "proxytunnel -h"}
+        [exec] (pth-curl) {rxvt -e /usr/share/kali-menu/exec-in-shell "pth-curl -h"}
+        [exec] (pth-net) {rxvt -e /usr/share/kali-menu/exec-in-shell "pth-net help"}
+        [exec] (pth-rpcclient) {rxvt -e /usr/share/kali-menu/exec-in-shell "pth-rpcclient -h"}
+        [exec] (pth-smbclient) {rxvt -e /usr/share/kali-menu/exec-in-shell "pth-smbclient -h"}
+        [exec] (pth-smbget) {rxvt -e /usr/share/kali-menu/exec-in-shell "pth-smbget --help"}
+        [exec] (pth-sqsh) {rxvt -e /usr/share/kali-menu/exec-in-shell "pth-sqsh --help"}
+        [exec] (pth-winexe) {rxvt -e /usr/share/kali-menu/exec-in-shell "pth-winexe -h"}
+        [exec] (pth-wmic) {rxvt -e /usr/share/kali-menu/exec-in-shell "pth-wmic -h"}
+        [exec] (pth-wmis) {rxvt -e /usr/share/kali-menu/exec-in-shell "pth-wmis -h"}
+        [exec] (pth-xfreerdp) {rxvt -e /usr/share/kali-menu/exec-in-shell "xfreerdp"}
+        [exec] (ptunnel) {rxvt -e /usr/share/kali-menu/exec-in-shell "ptunnel -h"}
+        [exec] (pwnat) {rxvt -e /usr/share/kali-menu/exec-in-shell "pwnat -h"}
+        [exec] (radare2) {rxvt -e /usr/share/kali-menu/exec-in-shell "radare2 -h"}
+        [exec] (rcracki_mt) {rxvt -e /usr/share/kali-menu/exec-in-shell "rcracki_mt"}
+        [exec] (readpst) {rxvt -e /usr/share/kali-menu/exec-in-shell "readpst -h"}
+        [exec] (reaver) {rxvt -e /usr/share/kali-menu/exec-in-shell "reaver -h"}
+        [exec] (rebind) {rxvt -e /usr/share/kali-menu/exec-in-shell "dns-rebind"}
+        [exec] (recon-ng) {rxvt -e recon-ng}
+        [exec] (recordmydesktop) {rxvt -e /usr/share/kali-menu/exec-in-shell "recordmydesktop -h"}
+        [exec] (recoverjpeg) {rxvt -e /usr/share/kali-menu/exec-in-shell "recoverjpeg -h"}
+        [exec] (reglookup) {rxvt -e /usr/share/kali-menu/exec-in-shell "reglookup"}
+        [exec] (responder) {rxvt -e /usr/share/kali-menu/exec-in-shell "responder -h"}
+        [exec] (rfcat) {rxvt -e /usr/share/kali-menu/exec-in-shell "rfcat -h"}
+        [exec] (rifiuti) {rxvt -e /usr/share/kali-menu/exec-in-shell "rifiuti"}
+        [exec] (rifiuti2) {rxvt -e /usr/share/kali-menu/exec-in-shell "rifiuti2 -h"}
+        [exec] (rkhunter) {rxvt -e /usr/share/kali-menu/exec-in-shell "rkhunter -h"}
+        [exec] (rsmangler) {rxvt -e /usr/share/kali-menu/exec-in-shell "rsmangler -h"}
+        [exec] (rtlsdr-scanner) {rtlsdr-scanner}
+        [exec] (rtpbreak) {rxvt -e /usr/share/kali-menu/exec-in-shell "rtpbreak -h"}
+        [exec] (rtpflood) {rxvt -e /usr/share/kali-menu/exec-in-shell "rtpflood"}
+        [exec] (rtpinsertsound) {rxvt -e /usr/share/kali-menu/exec-in-shell "rtpinsertsound -h"}
+        [exec] (rtpmixsound) {rxvt -e /usr/share/kali-menu/exec-in-shell "rtpmixsound -h"}
+        [exec] (safecopy) {rxvt -e /usr/share/kali-menu/exec-in-shell "safecopy -h"}
+        [exec] (samdump2) {rxvt -e /usr/share/kali-menu/exec-in-shell "samdump2 -h"}
+        [exec] (sbd) {rxvt -e /usr/share/kali-menu/exec-in-shell "sbd -h"}
+        [exec] (scalpel) {rxvt -e /usr/share/kali-menu/exec-in-shell "scalpel -h"}
+        [exec] (scrounge-ntfs) {rxvt -e /usr/share/kali-menu/exec-in-shell "scrounge-ntfs -h"}
+        [exec] (sctpscan) {rxvt -e /usr/share/kali-menu/exec-in-shell "sctpscan"}
+        [exec] (searchsploit) {rxvt -e /usr/share/kali-menu/exec-in-shell "searchsploit"}
+        [exec] (sfuzz) {rxvt -e /usr/share/kali-menu/exec-in-shell "sfuzz -h"}
+        [exec] (shellnoob) {rxvt -e /usr/share/kali-menu/exec-in-shell "shellnoob"}
+        [exec] (sidguesser) {rxvt -e /usr/share/kali-menu/exec-in-shell "sidguess"}
+        [exec] (siege) {rxvt -e /usr/share/kali-menu/exec-in-shell "siege -h"}
+        [exec] (sigfind) {rxvt -e /usr/share/kali-menu/exec-in-shell "sigfind"}
+        [exec] (siparmyknife) {rxvt -e /usr/share/kali-menu/exec-in-shell "siparmyknife"}
+        [exec] (sipcrack) {rxvt -e /usr/share/kali-menu/exec-in-shell "sipcrack -h"}
+        [exec] (sipp) {rxvt -e /usr/share/kali-menu/exec-in-shell "sipp -h"}
+        [exec] (skipfish) {rxvt -e /usr/share/kali-menu/exec-in-shell "skipfish -h"}
+        [exec] (slowhttptest) {rxvt -e /usr/share/kali-menu/exec-in-shell "slowhttptest -h"}
+        [exec] (smbmap) {rxvt -e /usr/share/kali-menu/exec-in-shell "smbmap -h"}
+        [exec] (smtp-user-enum) {rxvt -e /usr/share/kali-menu/exec-in-shell "smtp-user-enum -h"}
+        [exec] (sniffjoke) {rxvt -e /usr/share/kali-menu/exec-in-shell "sudo sniffjoke --help"}
+        [exec] (snmp-check) {rxvt -e /usr/share/kali-menu/exec-in-shell "snmp-check -h"}
+        [exec] (social engineering toolkit [root]) {rxvt -e sudo setoolkit}
+        [exec] (sorter) {rxvt -e /usr/share/kali-menu/exec-in-shell "sorter"}
+        [exec] (spiderfoot) {rxvt -e /usr/share/kali-menu/exec-in-shell "spiderfoot --help"}
+        [exec] (spiderfoot-cli) {rxvt -e /usr/share/kali-menu/exec-in-shell "spiderfoot-cli --help"}
+        [exec] (spike-generic_chunked) {rxvt -e /usr/share/kali-menu/exec-in-shell "generic_chunked"}
+        [exec] (spike-generic_listen_tcp) {rxvt -e /usr/share/kali-menu/exec-in-shell "generic_listen_tcp"}
+        [exec] (spike-generic_send_tcp) {rxvt -e /usr/share/kali-menu/exec-in-shell "generic_send_tcp"}
+        [exec] (spike-generic_send_udp) {rxvt -e /usr/share/kali-menu/exec-in-shell "generic_send_udp"}
+        [exec] (spooftooph) {rxvt -e /usr/share/kali-menu/exec-in-shell "spooftooph -h"}
+        [exec] (sqlmap) {rxvt -e /usr/share/kali-menu/exec-in-shell "sqlmap -h"}
+        [exec] (sqlsus) {rxvt -e /usr/share/kali-menu/exec-in-shell "sqlsus -h"}
+        [exec] (srch_strings) {rxvt -e /usr/share/kali-menu/exec-in-shell "srch_strings -h"}
+        [exec] (ssldump) {rxvt -e /usr/share/kali-menu/exec-in-shell "ssldump -h"}
+        [exec] (sslh) {rxvt -e /usr/share/kali-menu/exec-in-shell "sslh -h"}
+        [exec] (sslscan) {rxvt -e /usr/share/kali-menu/exec-in-shell "sslscan"}
+        [exec] (sslsniff) {rxvt -e /usr/share/kali-menu/exec-in-shell "sslsniff"}
+        [exec] (sslsplit) {rxvt -e /usr/share/kali-menu/exec-in-shell "sslsplit -h"}
+        [exec] (sslyze) {rxvt -e /usr/share/kali-menu/exec-in-shell "sslyze -h"}
+        [exec] (starkiller) {starkiller}
+        [exec] (statsgen) {rxvt -e /usr/share/kali-menu/exec-in-shell "statsgen -h"}
+        [exec] (stunnel4) {rxvt -e /usr/share/kali-menu/exec-in-shell "stunnel4 -help"}
+        [exec] (sucrack) {rxvt -e /usr/share/kali-menu/exec-in-shell "sucrack -h"}
+        [exec] (svcrack) {rxvt -e /usr/share/kali-menu/exec-in-shell "svcrack -h"}
+        [exec] (svcrash) {rxvt -e /usr/share/kali-menu/exec-in-shell "svcrash -h"}
+        [exec] (svmap) {rxvt -e /usr/share/kali-menu/exec-in-shell "svmap -h"}
+        [exec] (svreport) {rxvt -e /usr/share/kali-menu/exec-in-shell "svreport -h"}
+        [exec] (svwar) {rxvt -e /usr/share/kali-menu/exec-in-shell "svwar -h"}
+        [exec] (swaks) {rxvt -e swaks --help}
+        [exec] (t50) {rxvt -e /usr/share/kali-menu/exec-in-shell "t50 --help"}
+        [exec] (tcpflow) {rxvt -e /usr/share/kali-menu/exec-in-shell "tcpflow -h"}
+        [exec] (tcpreplay) {rxvt -e /usr/share/kali-menu/exec-in-shell "tcpreplay -h"}
+        [exec] (Telnet) {rxvt -e telnet.netkit}
+        [exec] (thc-pptp-bruter) {rxvt -e /usr/share/kali-menu/exec-in-shell "thc-pptp-bruter"}
+        [exec] (thc-ssl-dos) {rxvt -e /usr/share/kali-menu/exec-in-shell "thc-ssl-dos -h"}
+        [exec] (thcping6) {rxvt -e /usr/share/kali-menu/exec-in-shell "atk6-thcping6"}
+        [exec] (theharvester) {rxvt -e /usr/share/kali-menu/exec-in-shell "theHarvester -h"}
+        [exec] (tlssled) {rxvt -e /usr/share/kali-menu/exec-in-shell "tlssled"}
+        [exec] (truecrack) {rxvt -e /usr/share/kali-menu/exec-in-shell "truecrack -h"}
+        [exec] (tsk_comparedir) {rxvt -e /usr/share/kali-menu/exec-in-shell "tsk_comparedir"}
+        [exec] (tsk_gettimes) {rxvt -e /usr/share/kali-menu/exec-in-shell "tsk_gettimes -h"}
+        [exec] (tsk_loaddb) {rxvt -e /usr/share/kali-menu/exec-in-shell "tsk_loaddb"}
+        [exec] (tsk_recover) {rxvt -e /usr/share/kali-menu/exec-in-shell "tsk_recover"}
+        [exec] (twofi) {rxvt -e /usr/share/kali-menu/exec-in-shell "twofi -h"}
+        [exec] (ubertooth util) {rxvt -e /usr/share/kali-menu/exec-in-shell "ubertooth-util -h"}
+        [exec] (udptunnel) {rxvt -e /usr/share/kali-menu/exec-in-shell "udptunnel -h"}
+        [exec] (unicornscan) {rxvt -e /usr/share/kali-menu/exec-in-shell "us -h"}
+        [exec] (unix-privesc-check) {rxvt -e /usr/share/kali-menu/exec-in-shell "unix-privesc-check"}
+        [exec] (urlcrazy) {rxvt -e /usr/share/kali-menu/exec-in-shell "urlcrazy -h"}
+        [exec] (vinetto) {rxvt -e /usr/share/kali-menu/exec-in-shell "vinetto -h"}
+        [exec] (voiphopper) {rxvt -e /usr/share/kali-menu/exec-in-shell "voiphopper"}
+        [exec] (wafw00f) {rxvt -e /usr/share/kali-menu/exec-in-shell "wafw00f -h"}
+        [exec] (wapiti) {rxvt -e /usr/share/kali-menu/exec-in-shell "wapiti -h"}
+        [exec] (webacoo) {rxvt -e /usr/share/kali-menu/exec-in-shell "webacoo -h"}
+        [exec] (weevely) {rxvt -e /usr/share/kali-menu/exec-in-shell "weevely"}
+        [exec] (wfuzz) {rxvt -e /usr/share/kali-menu/exec-in-shell "wfuzz"}
+        [exec] (whatweb) {rxvt -e /usr/share/kali-menu/exec-in-shell "whatweb -h"}
+        [exec] (wifi-honey) {rxvt -e /usr/share/kali-menu/exec-in-shell "wifi-honey -h"}
+        [exec] (wifite) {rxvt -e /usr/share/kali-menu/exec-in-shell "wifite --help"}
+        [exec] (wpscan) {rxvt -e /usr/share/kali-menu/exec-in-shell "wpscan --help"}
+        [exec] (xprobe2) {rxvt -e /usr/share/kali-menu/exec-in-shell "xprobe2 -h"}
+        [exec] (xsser) {rxvt -e /usr/share/kali-menu/exec-in-shell "xsser -h"}
+        [exec] (yara) {rxvt -e /usr/share/kali-menu/exec-in-shell "yara"}
+        [exec] (yersinia) {rxvt -e /usr/share/kali-menu/exec-in-shell "sudo yersinia --help"}
+        [exec] (zap) {zaproxy}
+    [end]
+    [submenu] (Shells)
+        [exec] (Bash) {rxvt -e bash --login}
+        [exec] (Dash) {rxvt -e dash -i}
+        [exec] (GIT) {rxvt -e git}
+        [exec] (MC) {rxvt -e mc}
+        [exec] (QTerminal) {qterminal}
+        [exec] (QTerminal drop down) {qterminal --drop}
+        [exec] (Rdesktop) {rdesktop}
+        [exec] (Root Terminal Emulator) {pkexec x-terminal-emulator}
+        [exec] (Rxvt) {rxvt}
+        [exec] (Rxvt Color Unicode Terminal) {urxvt}
+        [exec] (Sh) {rxvt -e sh --login}
+        [exec] (Terminator) {terminator}
+        [exec] (Thunar File Manager) {thunar}
+        [exec] (UXTerm) {uxterm}
+        [exec] (VirtualBox) {VirtualBox}
+        [exec] (Xterm) {xterm}
+        [exec] (Zsh) {rxvt -e zsh}
+    [end]
+    [submenu] (System)
+        [submenu] (Settings)
+            [submenu] (GNOME)
+                [exec] (Advanced Network Configuration) {nm-connection-editor}
+                [exec] (Bluetooth Manager) {blueman-manager}
+                [exec] (LightDM GTK+ Greeter settings) {lightdm-gtk-greeter-settings-pkexec}
+            [end]
+            [submenu] (Xfce)
+                [exec] (Bluetooth Adapters) {blueman-adapters}
+                [exec] (Settings Manager) {xfce4-settings-manager}
+            [end]
+            [exec] (Accessibility) {xfce4-accessibility-settings}
+            [exec] (Appearance) {xfce4-appearance-settings}
+            [exec] (Clipboard Manager Settings) {xfce4-clipman-settings}
+            [exec] (Color Profiles) {xfce4-color-settings}
+            [exec] (Default Applications) {xfce4-mime-settings}
+            [exec] (Desktop) {xfdesktop-settings}
+            [exec] (Display) {xfce4-display-settings}
+            [exec] (File Management) {caja-file-management-properties}
+            [exec] (File Manager Settings) {thunar-settings}
+            [exec] (Kali Tweaks) {x-terminal-emulator -e kali-tweaks}
+            [exec] (Keyboard) {xfce4-keyboard-settings}
+            [exec] (Mouse and Touchpad) {xfce4-mouse-settings}
+            [exec] (Notifications) {xfce4-notifyd-config}
+            [exec] (Onboard Settings) {onboard-settings}
+            [exec] (Panel) {xfce4-panel --preferences}
+            [exec] (Power Manager) {xfce4-power-manager-settings}
+            [exec] (Print Settings) {system-config-printer}
+            [exec] (Qt5 Settings) {qt5ct}
+            [exec] (Removable Drives and Media) {thunar-volman-settings}
+            [exec] (Session and Startup) {xfce4-session-settings}
+            [exec] (Settings Editor) {xfce4-settings-editor}
+            [exec] (TeXdoctk) {texdoctk}
+            [exec] (Window Manager) {xfwm4-settings}
+            [exec] (Window Manager Tweaks) {xfwm4-tweaks-settings}
+            [exec] (Workspaces) {xfwm4-workspace-settings}
+            [exec] (Xfontsel) {xfontsel}
+            [exec] (Xvidtune) {xvidtune}
+        [end]
+        [exec] (BleachBit) {bleachbit}
+        [exec] (BleachBit [as root]) {pkexec bleachbit}
+        [exec] (Caja) {caja --no-desktop}
+        [exec] (Debian Task selector) {rxvt -e su-to-root -c tasksel}
+        [exec] (dvdisaster) {dvdisaster}
+        [exec] (Editres) {editres}
+        [exec] (GParted) {gparted}
+        [exec] (gscanbus) {gscanbus}
+        [exec] (GtkHash) {gtkhash}
+        [exec] (Hardware Locality lstopo) {lstopo}
+        [exec] (Log Out) {xfce4-session-logout}
+        [exec] (NmapSI4 - User mode) {nmapsi4}
+        [exec] (PowerShell) {rxvt -e pwsh}
+        [exec] (Sensor Viewer) {xfce4-sensors}
+        [exec] (SiriKali) {sirikali}
+        [exec] (Task Manager) {xfce4-taskmanager}
+        [exec] (Top) {rxvt -e top}
+        [exec] (Xclipboard) {xclipboard}
+        [exec] (Xev) {x-terminal-emulator -e xev}
+        [exec] (Xkill) {xkill}
+        [exec] (Xload) {xload}
+        [exec] (Xrefresh) {xrefresh}
+        [exec] (zuluCrypt) {zuluCrypt-gui}
+        [exec] (zuluMount) {zuluMount-gui}
+    [end]
+    [submenu] (Utilities)
+        [exec] (About Xfce) {xfce4-about}
+        [exec] (Application Finder) {xfce4-appfinder}
+        [exec] (Catfish File Search) {catfish}
+        [exec] (CherryTree) {cherrytree}
+        [exec] (Clipboard Manager) {xfce4-clipman}
+        [exec] (Engrampa Archive Manager) {engrampa}
+        [exec] (File Manager) {exo-open --launch FileManager}
+        [exec] (Help) {yelp}
+        [exec] (MATE Calculator) {mate-calc}
+        [exec] (Onboard) {onboard}
+        [exec] (Run Program...) {xfce4-appfinder --collapsed}
+        [exec] (Screenshot) {xfce4-screenshooter}
+        [exec] (Terminal Emulator) {exo-open --launch TerminalEmulator}
+        [exec] (Xcalc) {xcalc}
+        [exec] (Xman) {xman}
+    [end]
+    [separator]
+    [submenu] (FluxBox)
+        [workspaces] (Workspaces)
+        [submenu] (Styles)
+            [stylesdir] (~/.fluxbox/styles)
+        [end]
+        [config] (Configure)
+        [reconfig] (Reconfig)
+        [restart] (Restart)
+        [separator]
+        [exit] (Exit)
+    [end]
+[end]
+
