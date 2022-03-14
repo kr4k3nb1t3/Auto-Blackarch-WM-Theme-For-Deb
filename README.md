@@ -28,9 +28,9 @@ chmod +x autoconf.sh
 
 git clone https://github.com/trizen/fbmenugen && cd fbmenugen
 
-sudo cpan Linux::DesktopFiles && sudo cpan File::DesktopEntry
+sudo apt install -y libgtk3-perl 
 
-# Seleccione "Yes"
+sudo cpan Linux::DesktopFiles && sudo cpan File::DesktopEntry
 
 chmod +x fbmenugen
 
